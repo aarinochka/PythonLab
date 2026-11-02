@@ -1,7 +1,7 @@
 import string
 number_list = input("Введите список чисел: ")
 for i in string.punctuation:
-    if(i != '.' and i != ',' and i != '-'):
+    if(i != '.' and i != '-'):
         number_list = number_list.replace(i,' ')
 numbers = []    
 for i in number_list.split():
