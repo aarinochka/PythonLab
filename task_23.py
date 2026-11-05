@@ -99,11 +99,11 @@ if big_purchase:
                 print(f"Вам надо отложить {ostatok}руб, заработанные за этот месяц, и откладывать по {month_big_pur} руб следующие {time_big_pur} месяцев")
                 min_month_big_pur = math.ceil(summ_big_pur/ostatok - 1)
                 print(f"или\nВы можете купить через {min_month_big_pur} месяцев, откладывая как в этом по {ostatok} руб")
+        else:
+            if summ_big_pur < ostatok:
+                print("Вы можете совершить эту покупку прямо сейчай")
             else:
-                if summ_big_pur < ostatok:
-                    print("Вы можете совершить эту покупку прямо сейчай")
-                else:
-                    print(f"Вы не можете совершить эту покупку прямо сейчас, вам не хватает еще {summ_big_pur - ostatok} руб")
-                    print(f"Вы сможете накопить это примерно за {math.ceil((summ_big_pur- ostatok)/ostatok)} месяцев")
+                print(f"Вы не можете совершить эту покупку прямо сейчас, вам не хватает еще {summ_big_pur - ostatok} руб")
+                print(f"Вы сможете накопить это примерно за {math.ceil((summ_big_pur- ostatok)/ostatok)} месяцев")
 
 
