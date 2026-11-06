@@ -1,0 +1,5 @@
+familiya = input("Введите фамилию: ")
+imya = input("Введите имя: ")
+otchestvo = input("Введите отчество: ")
+familiya = familiya.replace(" ","")
+print(f"Ваше ФИО: {familiya[0].upper()}{familiya[1:].lower()} {imya[0].upper()}. {otchestvo[0].upper()}.")
